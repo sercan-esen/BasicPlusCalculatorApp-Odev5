@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:maxLines="3"
+        app:autoSizeTextType="uniform"
+        app:autoSizeMinTextSize="18sp"
+        app:autoSizeMaxTextSize="58sp"
+        android:autoSizeStepGranularity="2sp"
+        android:id="@+id/tvDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="bottom|end"
+        android:paddingEnd="8dp"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="58sp"
+        app:layout_constraintBottom_toTopOf="@id/tvResult"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:visibility="gone"
+        android:maxLines="1"
+        app:autoSizeTextType="uniform"
+        app:autoSizeMinTextSize="18sp"
+        app:autoSizeMaxTextSize="32sp"
+        android:autoSizeStepGranularity="2sp"
+        android:id="@+id/tvResult"
+        android:alpha="0.8"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="bottom|end"
+        android:paddingEnd="8dp"
+        android:text=""
+        android:textColor="@color/color_result"
+        android:textSize="58sp"
+        app:layout_constraintBottom_toTopOf="@id/horizontalBorderline40"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvDisplay" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontalBorderline40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/verticalBorderline25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/verticalBorderline50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.50" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/verticalBorderline75"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontalBorderline55"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.55" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontalBorderline70"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.70" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontalBorderline85"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.85" />
+
+
+    <TextView
+        android:id="@+id/tvNumberZero"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="16dp"
+        android:background="@drawable/bg_button_number"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="38sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/verticalBorderline50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/horizontalBorderline85" />
+
+    <TextView
+        android:id="@+id/tvNumberOne"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="20dp"
+        android:background="@drawable/bg_button_number"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="@color/white"
+        android:textSize="38sp"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalBorderline55"
+        app:layout_constraintEnd_toStartOf="@+id/verticalBorderline25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalBorderline40" />
+
+    <TextView
+        android:id="@+id/tvNumberTwo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="20dp"
+        android:background="@drawable/bg_button_number"
+        android:gravity="center"
+        android:text="2"
+        android:textColor="@color/white"
+        android:textSize="38sp"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalBorderline55"
+        app:layout_constraintEnd_toStartOf="@+id/verticalBorderline50"
+        app:layout_constraintStart_toStartOf="@+id/verticalBorderline25"
+        app:layout_constraintTop_toTopOf="@+id/horizontalBorderline40" />
+
+    <TextView
+        android:id="@+id/tvNumberThree"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="20dp"
+        android:background="@drawable/bg_button_number"
+        android:gravity="center"
+        android:text="3"
+        android:textColor="@color/white"
+        android:textSize="38sp"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalBorderline55"
+        app:layout_constraintEnd_toStartOf="@+id/verticalBorderline75"
+        app:layout_constraintStart_toStartOf="@+id/verticalBorderline50"
+        app:layout_constraintTop_toTopOf="@+id/horizontalBorderline40" />
+
+    <TextView
+        android:id="@+id/tvNumberFour"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="20dp"
+        android:background="@drawable/bg_button_number"
+        android:gravity="center"
+        android:text="4"
+        android:textColor="@color/white"
+        android:textSize="38sp"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalBorderline70"
+        app:layout_constraintEnd_toStartOf="@+id/verticalBorderline25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/horizontalBorderline55" />
+
+    <TextView
+        android:id="@+id/tvNumberFive"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="20dp"
+        android:background="@drawable/bg_button_number"
+        android:gravity="center"
+        android:text="5"
+        android:textColor="@color/white"
+        android:textSize="38sp"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalBorderline70"
+        app:layout_constraintEnd_toStartOf="@+id/verticalBorderline50"
+        app:layout_constraintStart_toStartOf="@+id/verticalBorderline25"
+        app:layout_constraintTop_toTopOf="@+id/horizontalBorderline55" />
+
+    <TextView
+        android:id="@+id/tvNumberSix"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="20dp"
+        android:background="@drawable/bg_button_number"
+        android:gravity="center"
+        android:text="6"
+        android:textColor="@color/white"
+        android:textSize="38sp"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalBorderline70"
+        app:layout_constraintEnd_toStartOf="@+id/verticalBorderline75"
+        app:layout_constraintStart_toStartOf="@+id/verticalBorderline50"
+        app:layout_constraintTop_toTopOf="@+id/horizontalBorderline55" />
+
+    <TextView
+        android:id="@+id/tvNumberSeven"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="20dp"
+        android:background="@drawable/bg_button_number"
+        android:gravity="center"
+        android:text="7"
+        android:textColor="@color/white"
+        android:textSize="38sp"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalBorderline85"
+        app:layout_constraintEnd_toStartOf="@+id/verticalBorderline25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/horizontalBorderline70" />
+
+    <TextView
+        android:id="@+id/tvNumberEight"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="20dp"
+        android:background="@drawable/bg_button_number"
+        android:gravity="center"
+        android:text="8"
+        android:textColor="@color/white"
+        android:textSize="38sp"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalBorderline85"
+        app:layout_constraintEnd_toStartOf="@+id/verticalBorderline50"
+        app:layout_constraintStart_toStartOf="@+id/verticalBorderline25"
+        app:layout_constraintTop_toTopOf="@+id/horizontalBorderline70" />
+
+    <TextView
+        android:id="@+id/tvNumberNine"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="20dp"
+        android:background="@drawable/bg_button_number"
+        android:gravity="center"
+        android:text="9"
+        android:textColor="@color/white"
+        android:textSize="38sp"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalBorderline85"
+        app:layout_constraintEnd_toStartOf="@+id/verticalBorderline75"
+        app:layout_constraintStart_toStartOf="@+id/verticalBorderline50"
+        app:layout_constraintTop_toTopOf="@+id/horizontalBorderline70" />
+
+    <TextView
+        android:id="@+id/tvAc"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="20dp"
+        android:background="@drawable/bg_button_number"
+        android:backgroundTint="@color/button_operation_color_2"
+        android:gravity="center"
+        android:text="AC"
+
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalBorderline55"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/verticalBorderline75"
+        app:layout_constraintTop_toTopOf="@+id/horizontalBorderline40"
+        />
+    <!-- Dayı konusma bitince wpden yaz bende yiğenle takılıyorum -->
+
+    <ImageView
+        android:id="@+id/ivDelete"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="20dp"
+        android:background="@drawable/bg_button_number"
+        android:gravity="center"
+        android:src="@drawable/ic_outline_backspace_24"
+        android:padding="16dp"
+        android:backgroundTint="@color/button_operation_color_1"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalBorderline70"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/verticalBorderline75"
+        app:layout_constraintTop_toTopOf="@+id/horizontalBorderline55" />
+
+    <TextView
+        android:id="@+id/tvNumberSum"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="20dp"
+        android:background="@drawable/bg_button_number"
+        android:backgroundTint="@color/button_operation_color_2"
+        android:gravity="center"
+        android:text="+"
+        android:textColor="@color/white"
+        android:textSize="38sp"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalBorderline85"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/verticalBorderline75"
+        app:layout_constraintTop_toTopOf="@+id/horizontalBorderline70" />
+
+    <TextView
+        android:id="@+id/tvNumberEqual"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="16dp"
+        android:background="@drawable/bg_button_number"
+        android:backgroundTint="@color/button_operation_color_1"
+        android:gravity="center"
+        android:text="="
+        android:textColor="@color/white"
+        android:textSize="38sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="@+id/verticalBorderline50"
+        app:layout_constraintTop_toTopOf="@+id/horizontalBorderline85"
+        app:layout_constraintVertical_bias="0.516" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
